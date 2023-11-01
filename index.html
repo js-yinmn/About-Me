@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS</title>
+  <link href="css/animations.css" rel="stylesheet" type="text/css" />
+  <link href="css/index.css" rel="stylesheet" type="text/css" />
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/c84a0d41a6.js" crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+  <i id="credit">Made by JS with no JavaScript :)</i>
+  <div id="container">
+  <main>
+    <h1>
+      About JS
+      <span id="header" class="fa-solid fa-arrow-right"></span>
+      <input id="see-main" type="checkbox">
+    </h1>
+    
+    <section style="--delay: 0">
+      <h1>
+        <span class="fa-solid fa-book"></span>
+        Info
+        <span class="fa-solid fa-arrow-right"></span>
+        <input type="checkbox">
+      </h1>
+      
+      <div>
+        <h3 style="--delay: 0"> 🇺🇲 from the USA</h3>
+        <h3 style="--delay: 1"> 16 years old</h3>
+        <h3 style="--delay: 2"> Male</h3>
+      </div>
+    </section>
+    
+    <section style="--delay: 1">
+      <h1>
+        <span class="fa-solid fa-thumbs-up"></span>
+        Likes
+        <span class="fa-solid fa-arrow-right"></span>
+        <input type="checkbox">
+      </h1>
+      
+      <div>
+        <h3 style="--delay: 0"><span class="fa-solid fa-dog"></span> Dogs</h3>
+        <h3 style="--delay: 1">Video Games</h3>
+        <h3 style="--delay: 2"><span class="fa-solid fa-laptop"></span> Programming/Software Dev</h3>
+        <h3 style="--delay: 3"><span class="fa-solid fa-chess"></span> Chess</h3>
+      </div>
+    </section>
+
+    <section style="--delay: 2">
+      <h1>
+        <span class="fa-solid fa-thumbs-down"></span>
+        Dislikes
+        <span class="fa-solid fa-arrow-right"></span>
+        <input type="checkbox">
+      </h1>
+
+      <div>
+        <h3 style="--delay: 0">People who have no personality</h3>
+        <h3 style="--delay: 1">Dumb Idiots</h3>
+        <h3 style="--delay: 2">🏳️‍🌈🇺🇦🏳️‍⚧️ "Woke" people</h3>
+      </div>
+    </section>
+
+    <section style="--delay: 3">
+      <span class="large-media fa-brands fa-discord"></span>
+      <span class="large-media fa-brands fa-instagram"></span>
+      <span class="large-media fa-brands fa-github"></span>
+    </section>
+  </main>
+  </div>
+  <!-- make things align vertically for nicer look -->
+  <script>
+    document.body.style=`width: ${window.innerWidth}px;height: ${window.innerHeight}px`;
+    document.body.onresize = () => document.body.style=`width: ${window.innerWidth}px;height: ${window.innerHeight}px`;
+  </script>
+</body>
+
+</html>

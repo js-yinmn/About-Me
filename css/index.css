@@ -1,0 +1,147 @@
+:root {
+  --primary-color: navy;
+  --secondary-color: blue;
+  --accent-color: #595959;
+  --background-color: #000057;
+  --text-color: #1F51FF;
+}
+
+* {
+  position: relative;
+  color: var(--text-color);
+  margin: 0px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 0.3rem;
+  font-family:
+    Uncut Sans,
+    monospace;
+  overflow: hidden;
+}
+
+html {
+  overflow: scroll;
+}
+
+body {
+  background: linear-gradient(to bottom right, var(--primary-color), var(--primary-color), var(--background-color), var(--primary-color), var(--background-color), var(--primary-color), var(--primary-color), var(--background-color), var(--background-color), var(--primary-color), var(--primary-color));
+  background-repeat: no-repeat;
+  background-size: 1000% 1000%;
+  animation: background 15s linear infinite;
+}
+
+h1 {
+  margin-bottom: 2.5%;
+  animation: open-section 1200ms forwards;
+}
+
+h2 {
+  
+}
+
+h3 {
+  padding: 2.5%;
+  margin: 2.5%;
+  opacity: 0;
+  animation: open 1s forwards;
+  animation-delay: calc(var(--delay)*300ms);
+}
+
+div {
+  
+}
+
+#credit {
+  display: block;
+  position: absolute;
+  margin: 1%;
+  font-size: 0.8rem;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+main {
+  padding-top: 15%;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.large-media {
+  font-size: 2rem;
+  margin: 5%;
+}
+section {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  padding-top: 2.5%;
+  width: 90%;
+  left: 5%;
+  display: none;
+  border: solid 0.1rem;
+}
+
+section > div {
+  width: 100%;
+  display: none;
+  border-top: solid 0.1rem;
+}
+
+#see-main {
+  position: absolute;
+  line-height: normal;
+  width: 40%;
+  height: 40%;
+  margin-left: -25%;
+  margin-top: 2%;
+  opacity: 0;
+}
+
+
+section h1 input[type="checkbox"] {
+  position: absolute;
+  line-height: normal;
+  width: 100%;
+  height: 100%;
+  margin-left: -100%;
+  opacity: 0;
+}
+section:has( > h1 > input[type="checkbox"]) > h1 > .fa-arrow-right {
+  transform: rotate(0deg);
+  transition: all 500ms;
+}
+section:has( > h1 > input[type="checkbox"]:checked) > h1 > .fa-arrow-right {
+  transform: rotate(90deg);
+  transition: all 500ms;
+}
+section:has( > h1 > input[type="checkbox"]:checked) > div {
+  display: inline-block;
+}
+
+main:has(> h1 > #see-main) > h1 > span {
+  transform: rotate(0deg);
+  transition: all linear 250ms;
+}
+main:has(> h1 > #see-main:checked) > h1 > span {
+  transform: rotate(90deg);
+  transition: all linear 250ms;
+}
+main:has( > h1 > #see-main:checked) > section {
+  display: block;
+  opacity: 0;
+  animation: open 1s forwards;
+  animation-delay: calc(var(--delay)*300ms);
+}
+
+
+
+@media (orientation: portait) {
+  
+}
+
+@media (orientation: landscape) {
+  
+}
