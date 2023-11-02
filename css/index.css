@@ -1,9 +1,9 @@
 :root {
   --primary-color: navy;
   --secondary-color: blue;
-  --accent-color: #595959;
+  --accent-color: #1F51FF;
   --background-color: black;
-  --text-color: #1F51FF;
+  --text-color: #7396ff;
 }
 
 * {
@@ -17,6 +17,7 @@
   overflow: hidden;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  user-select: none;
 }
 
 html {
@@ -38,6 +39,9 @@ body {
 h1 {
   margin-bottom: 2.5%;
   animation: open-section 1200ms forwards;
+}
+h1:hover {
+  curser: pointer;
 }
 
 h2 {
