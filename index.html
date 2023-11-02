@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>JS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
   <link href="css/animations.css" rel="stylesheet" type="text/css" />
   <link href="css/index.css" rel="stylesheet" type="text/css" />
 
@@ -14,13 +17,13 @@
 </head>
 
 <body>
-  <i id="credit">Made by JS with no JavaScript :)</i>
+  <i id="credit">Made by JS</i>
   <div id="container">
+  
   <main>
     <h1>
-      About JS
-      <span id="header" class="fa-solid fa-arrow-right"></span>
-      <input id="see-main" type="checkbox">
+      <span>About JS</span>
+      <span class="fa-solid fa-arrow-right"></span>
     </h1>
     
     <section style="--delay: 0">
@@ -28,7 +31,6 @@
         <span class="fa-solid fa-book"></span>
         Info
         <span class="fa-solid fa-arrow-right"></span>
-        <input type="checkbox">
       </h1>
       
       <div>
@@ -43,7 +45,6 @@
         <span class="fa-solid fa-thumbs-up"></span>
         Likes
         <span class="fa-solid fa-arrow-right"></span>
-        <input type="checkbox">
       </h1>
       
       <div>
@@ -59,7 +60,6 @@
         <span class="fa-solid fa-thumbs-down"></span>
         Dislikes
         <span class="fa-solid fa-arrow-right"></span>
-        <input type="checkbox">
       </h1>
 
       <div>
@@ -74,12 +74,28 @@
       <a href="https://instagram.com/js.yinmn?igshid=NzZlODBkYWE4Ng=="><span class="large-media fa-brands fa-instagram"></span></a>
       <a href="https://github.com/js-yinmn"><span class="large-media fa-brands fa-github"></span></a>
     </section>
+    
   </main>
   </div>
   <!-- make things align vertically for nicer look -->
   <script>
     document.body.style=`width: ${window.innerWidth}px;height: ${window.innerHeight}px`;
     document.body.onresize = () => document.body.style=`width: ${window.innerWidth}px;height: ${window.innerHeight}px`;
+
+    var headers = document.getElementsByTagName("h1")
+    
+    for(header of headers) {
+      header.addEventListener("click", function() {
+        this.lastChild.previousElementSibling.classList.toggle("arrow-down")
+        var next = this.nextElementSibling;
+        while(next) {
+          if(next.tagName=="SECTION") next.classList.toggle("section");
+          else next.classList.toggle("section-content");
+          
+          next=next.nextElementSibling
+        }
+      })
+    }
   </script>
 </body>
 
