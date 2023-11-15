@@ -22,6 +22,8 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   user-select: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -48,7 +50,7 @@ h1 {
   text-align: left;
 }
 h1:hover {
-  curser: pointer;
+  cursor: pointer;
 }
 h1 .fa-arrow-right{
   float: right ;
@@ -112,6 +114,7 @@ section {
   width: 90%;
   left: 5%;
   display: none;
+  border: solid 0.1rem;
 }
 
 section > div {
