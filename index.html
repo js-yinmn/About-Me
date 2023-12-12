@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Silkscreen&family=VT323&display=swap" rel="stylesheet">
-
+  
   <!-- CSS -->
   <link href="css/animations.css" rel="stylesheet" type="text/css" />
   <link href="css/index.css" rel="stylesheet" type="text/css" />
@@ -21,7 +21,9 @@
 </head>
 
 <body>
-  <i id="credit" style="animation: open-section 1s">Made by JS</i>
+  <i id="credit" style="animation: open 2s">
+    Made By JS
+  </i>
   <div id="container">
   
   <main>
@@ -30,7 +32,7 @@
       <span class="fa-solid fa-arrow-right" style="margin: 2%"></span>
     </h1>
     
-    <section style="--delay: 0">
+    <section style="--delay: 1">
       <h1>
         <span class="fa-solid fa-book"></span>
         Info
@@ -38,13 +40,58 @@
       </h1>
       
       <div>
-        <h3 style="--delay: 0"> from the USA</h3>
-        <h3 style="--delay: 1"> 16 years old</h3>
-        <h3 style="--delay: 2"> Male</h3>
+        <p style="--delay: 0">
+          Founder of <i>Iteration Seven</i> 
+        </p>
+        
+        <p style="--delay: 1">
+          <span class="fa-solid fa-code"></span> 
+          Full Stack developer
+        </p>
+        
+        <p style="--delay: 2">
+          <span class="fa-solid fa-gamepad"></span> 
+          Game developer
+        </p>
+        
+        <p style="--delay: 3">
+          <span class="fa-solid fa-free"></span> 
+          🇺🇸 American
+        </p>
+      </div>
+    </section>
+
+    <section style="--delay: 2">
+      <h1>
+        <span class="fa-solid fa-star"></span>
+        Hobbies
+        <span class="fa-solid fa-arrow-right"></span>
+      </h1>
+
+      <div>
+        <p style="--delay: 0">
+          <span class="fa-solid fa-gamepad"></span>
+          Video Games
+        </p>
+        
+        <p style="--delay: 1">
+          <span class="fa-solid fa-laptop"></span>
+          Programming
+        </p>
+        
+        <p style="--delay: 2">
+          <span class="fa-solid fa-chess-king"></span>
+          Chess
+        </p>
+        
+        <p style="--delay: 3">
+          <span class="fa-solid fa-landmark"></span>
+          Studying government/politics
+        </p>
       </div>
     </section>
     
-    <section style="--delay: 1">
+    <section style="--delay: 3">
       <h1>
         <span class="fa-solid fa-thumbs-up"></span>
         Likes
@@ -52,16 +99,24 @@
       </h1>
       
       <div>
-        <h3 style="--delay: 0"><span class="fa-solid fa-dog"></span> Dogs</h3>
-        <h3 style="--delay: 1"><span class="fa-solid fa-gamepad"></span> Video Games</h3>
-        <h3 style="--delay: 2"><span class="fa-solid fa-laptop"></span> Programming</h3>
-        <h3 style="--delay: 3"><span class="fa-solid fa-chess-king"></span> Chess</h3>
-        <h3 style="--delay: 4"><span class="fa-solid fa-flag"></span> Debates</h3>
-        <h3 style="--delay: 5"><span class="fa-solid fa-landmark"></span> Studying politics and philosophy</h3>
+        <p style="--delay: 0">
+          <span class="fa-solid fa-dog"></span>
+          Dogs
+        </p>
+        
+        <p style="--delay: 1">
+          <span class="fa-solid fa-flag"></span>
+          Debates
+        </p>
+        
+        <p style="--delay: 2">
+          <span class="fa-solid fa-star"></span>
+          Being creative :3
+        </p>
       </div>
     </section>
 
-    <section style="--delay: 2">
+    <section style="--delay: 4">
       <h1>
         <span class="fa-solid fa-thumbs-down"></span>
         Dislikes
@@ -69,24 +124,34 @@
       </h1>
 
       <div>
-        <h3 style="--delay: 0">People who are easily offended</h3>
-        <h3 style="--delay: 1">🏳️‍🌈 "Woke" people</h3>
-        <h3 style="--delay: 2">People who cant take jokes</h3>
-        <h3 style="--delay: 3">People who do drugs</h3>
+        <p style="--delay: 0">
+          🏳️‍🌈 People who are easily offended
+        </p>
+        
+        <p style="--delay: 1">
+          🏳️‍🌈 People who are obessed with being politically correct
+        </p>
+        
+        <p style="--delay: 2">
+          <span class="fa-solid fa-brands fa-apple"></span>
+          Apple
+        </p>
       </div>
     </section>
 
-    <section style="--delay: 4;padding-bottom: 2%;">
+    <section style="--delay: 5;padding-bottom: 2%;">
       <a href="https://discord.com/invite/BRJndqjFsc"><span class="large-media fa-brands fa-discord"></span></a>
       <a href="https://instagram.com/js.yinmn?igshid=NzZlODBkYWE4Ng=="><span class="large-media fa-brands fa-instagram"></span></a>
       <a href="https://github.com/js-yinmn"><span class="large-media fa-brands fa-github"></span></a>
     </section>
-
-    <section style="border: none;padding: 2.5%">
-      
+    
+    <section style="--delay: 6;border: none;padding: 2.5%">
+      V2.0.1
     </section>
   </main>
   </div>
+
+  <div id="loading-screen" style="position: absolute;width: 100%;height: 100%;top:0;left:0;background: black;"></div>
   
   <script>
     document.body.style=`width: ${window.innerWidth}px;height: ${window.innerHeight}px`;
