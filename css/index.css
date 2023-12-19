@@ -86,7 +86,8 @@ p {
 p:hover {
   background: var(--text-color);
   color: var(--primary-color);
-  transition: all 250ms;
+  transition: all 500ms;
+  cursor: pointer;
 }
 p:hover * {
   color: var(--background-color);
@@ -98,7 +99,7 @@ div {
 
 span {
   transform: rotate(0deg);
-  transition: all 250ms;
+  transition: all 500ms;
 }
 
 #credit {
@@ -106,7 +107,6 @@ span {
   position: absolute;
   margin: 1%;
   font-size: 0.8rem;
-  background: black;
   border-radius: 1.5rem;
   padding: 2%;
   z-index: 9999;
